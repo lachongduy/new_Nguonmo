@@ -2,13 +2,7 @@
 include "header.php";
 include "leftside.php"
 ?>
-<?php
-if (isset($_GET['loaisanpham_id'])|| $_GET['loaisanpham_id']!=NULL){
-    $loaisanpham_id = $_GET['loaisanpham_id'];
-    }
-    $get_loaisanpham = $index -> get_loaisanpham($loaisanpham_id);
-   
-?>
+
 
 <div class="cartegory-right">
                     <div class="cartegory-right-top row">
