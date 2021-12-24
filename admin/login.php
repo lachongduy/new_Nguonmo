@@ -1,28 +1,4 @@
-<?php
-// include "class/cartegory_class.php";
-define('__ROOT__', dirname(dirname(__FILE__))); 
-require_once(__ROOT__.'../admin/class/admin_class.php');
-Session::init();
-$admin = new admin();
-?>
-<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $username = $_POST['username'];
-    $userpassword = md5($_POST['password']);
-    // var_dump($_POST);
-	$check_admin = $admin ->check_admin($username,$userpassword);
-}
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
-    <title>Ivy-Login</title>
-</head>
+
 <body>
     <div class="login">
         <div class="login-form">
